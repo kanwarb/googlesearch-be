@@ -6,4 +6,7 @@ router.route("/")
 .post(googleSearch.create)
 .delete(googleSearch.remove);
 
+router
+  .route("/:id")
+  .delete(booksController.remove);
 module.exports = router;
