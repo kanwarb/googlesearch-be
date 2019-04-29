@@ -9,6 +9,7 @@ const bookSchema = new Schema({
   image: String,
   link: String,
   saved: Boolean,
+  description: String,
   date: { type: Date, default: Date.now }
 });
 
