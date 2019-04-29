@@ -4,7 +4,6 @@ const googleSearch = require("../../controllers/googleSearch");
 router.route("/")
 .get(googleSearch.find)
 .post(googleSearch.create)
-.delete(googleSearch.remove);
 
 router
   .route("/:id")
